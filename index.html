@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- 
+      The viewport meta tag:
+        - Ensures that the screen width is set to the device width and the content is rendered with this width in mind.
+        - Designing the website to be responsive to the size of the viewport.
+     -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -18,9 +24,14 @@
   </head>
 
   <body>
+    <!-- Top level header.need to add a picture to it  -->
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
+          <!-- 
+              col-12    : meant for the small resolutions.this div will take the entire length.
+              col-sm-6  : meant for sm (small) resolution or higher,the div will take 50% of the available width.
+           -->
           <div class="col-12 col-sm-6">
             <h1 class="jumbotron-header">Ristorante con Fusion</h1>
             <p>
@@ -34,10 +45,16 @@
       </div>
     </header>
 
+    <!-- 
+      order-sm-last/order-sm-first  : allow to change the succession of our divs.
+        Example : below normaly the div containing "Our Lipsmacking Culina..." must be rendered before the "Uthapizza"
+                : but when we addes order-sm-last we reverted that.
+     -->
+
     <div class="container">
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
-          <h3 class="row-title-0">Our Lipsmacking Culinary Creations</h3>
+          <h3 class="row-title-color-0">Our Lipsmacking Culinary Creations</h3>
         </div>
         <div class="col col-sm col-md order-sm-first">
           <h2>Uthappizza</h2>
@@ -49,9 +66,13 @@
         </div>
       </div>
 
+      <!-- 
+        align-items-center  : allow to child div to be aligned horizontal center.
+       -->
+
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 col-md-3">
-          <h3 class="row-title-0">This Month's Promotions</h3>
+          <h3 class="row-title-color-0">This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
           <h2>Weekend Grand Buffet</h2>
@@ -66,7 +87,7 @@
 
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
-          <h3 class="row-title-0">Meet our Culinary Specialists</h3>
+          <h3 class="row-title-color-0">Meet our Culinary Specialists</h3>
         </div>
         <div class="col col-sm col-md order-sm-first">
           <h2>Alberto Somayya</h2>
@@ -86,6 +107,10 @@
         <div class="row">
           <div class="col-4 offset-1 col-sm-2">
             <h5>Links</h5>
+
+            <!-- 
+              list-unstyled: remove ul bullets ou dak l fri3.
+             -->
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
