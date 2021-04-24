@@ -1,26 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+:root {
+  --color-0: rgb(140, 39, 48);
+  --color-1: rgb(242, 185, 80);
+  --color-2: rgb(166, 107, 73);
+  --color-3: rgb(64, 10, 5);
+  --color-4: rgb(64, 10, 5);
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
 }
 
-.row-title-color-0 {
-  color: #a68f1f;
+.color-0 {
+  color: var(--color-0);
 }
 
-.row-title-color-1 {
-  color: #f2e635;
+.color-1 {
+  color: var(--color-1);
 }
 
-.row-title-color-2 {
-  color: #a69d1f;
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-4 {
+  color: var(--color-4);
 }
 
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
-  border-color: #a69d1f;
+  border-color: var(--color-4);
   min-height: 250px;
+}
+
+.last-row {
+  border-bottom: 0px;
 }
 
 .footer {
@@ -36,12 +58,21 @@
   color: #0f0f0f;
 }
 
-.jumbotron-header {
-  color: #f2e635;
-}
-
 .address {
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
+}
+
+.top-bottom-alignement {
+  margin: 10px auto 10px auto;
+}
+
+.positions {
+  font-weight: 200;
+  font-size: 70%;
+}
+
+.anchor-color {
+  color: var(--color-0);
 }
