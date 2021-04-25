@@ -76,3 +76,13 @@
 .anchor-color {
   color: var(--color-0);
 }
+
+.limit-size {
+  max-width: 150px;
+}
+
+@media only screen and (max-width: 574px) {
+  .limit-size {
+    max-width: 100%;
+  }
+}

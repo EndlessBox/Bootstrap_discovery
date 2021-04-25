@@ -10,11 +10,18 @@
   </head>
 
   <body>
-    <header class="jumbotron">
+     <!-- Top level header.need to add a picture to it  -->
+     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
+          <!-- 
+              col-12    : meant for the small resolutions.this div will take the entire length.
+              col-sm-6  : meant for sm (small) resolution or higher,the div will take 50% of the available width.
+           -->
           <div class="col-12 col-sm-6">
-            <h1><span class="color-0">Ristorante</span> con Fusion</h1>
+            <h1 class="jumbotron-header">
+              <span class="color-0">Ristorante con Fusion</span>
+            </h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
               unique fusion experience. Our lipsmacking creations will tickle
@@ -123,32 +130,50 @@
         <div class="row">
           <div class="col-4 offset-1 col-sm-2">
             <h5>Links</h5>
+
+            <!-- 
+              list-unstyled: remove ul bullets ou dak l fri3.
+             -->
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a class="anchor-color" href="#">Home</a></li>
+              <li><a class="anchor-color" href="#">About</a></li>
+              <li><a class="anchor-color" href="#">Menu</a></li>
+              <li><a class="anchor-color" href="#">Contact</a></li>
             </ul>
           </div>
           <div class="col-7 col-sm-5">
             <h5>Our Address</h5>
-            <address>
+            <address class="address">
               121, Clear Water Bay Road<br />
               Clear Water Bay, Kowloon<br />
               HONG KONG<br />
-              Tel.: +852 1234 5678<br />
-              Fax: +852 8765 4321<br />
-              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+              Tel.: +212 708004241<br />
+              Email:
+              <a class="anchor-color" href="mailto:ybouladh@student.1337.ma"
+                >ybouladh@student.1337.ma</a
+              >
             </address>
           </div>
-          <div class="col-12 col-sm-4 align-self-center">
-            <div class="text-center">
-              <a href="http://google.com/+">Google+</a>
-              <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-              <a href="http://www.linkedin.com/in/">LinkedIn</a>
-              <a href="http://twitter.com/">Twitter</a>
-              <a href="http://youtube.com/">YouTube</a>
-              <a href="mailto:">Mail</a>
+          <div class="col-12 col-sm-4 limit-size align-self-center">
+            <div class="text-center text-sm-left">
+              <a class="col-12" href="http://google.com/+"
+                ><i class="bi bi-google anchor-color"></i
+              ></a>
+              <a class="col-12" href="http://www.facebook.com/profile.php?id="
+                ><i class="bi bi-facebook anchor-color"></i
+              ></a>
+              <a class="col-12" href="http://www.linkedin.com/in/"
+                ><i class="bi bi-linkedin anchor-color"></i
+              ></a>
+              <a class="col-12" href="http://twitter.com/"
+                ><i class="bi bi-twitter anchor-color"></i
+              ></a>
+              <a class="col-12" href="http://youtube.com/"
+                ><i class="bi bi-youtube anchor-color"></i
+              ></a>
+              <a class="col-12" href="mailto:"
+                ><i class="bi bi-envelope-fill anchor-color"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -159,6 +184,7 @@
         </div>
       </div>
     </footer>
+
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
